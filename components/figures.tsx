@@ -69,7 +69,7 @@ const Text = forwardRef<Mesh, MeshProps>(({ children, ...rest }, ref) => (
       size={2}
       height={0.3}
       curveSegments={2}
-      font="/portfolio-v3/fonts/arial.json"
+      font="/fonts/arial.json"
       onBeforeRender={centerText}>
       {children}
       <Material />

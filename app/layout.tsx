@@ -15,8 +15,8 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" },
   keywords: ["portfolio", "frontend", "frontend developer"],
   robots: "all",
-  metadataBase: new URL("https://hartaithan.github.io/portfolio-v3"),
-  manifest: "/portfolio-v3/manifest.json",
+  metadataBase: new URL("https://hartaithan.github.io"),
+  manifest: "/manifest.json",
 };
 
 const RootLayout: FC<PropsWithChildren> = (props) => {
