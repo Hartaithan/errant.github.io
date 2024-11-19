@@ -1,0 +1,48 @@
+{
+  "name": "portfolio-v3",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "deploy": "next build && touch out/.nojekyll && git add out/ -f && git commit -m \"deploy\" && git push origin --delete gh-pages || true && git subtree push --prefix out origin gh-pages && git reset --soft HEAD~1 && git reset",
+    "lint": "next lint --dir .",
+    "lint:fix": "eslint --fix --ext ts,tsx .",
+    "format": "npx prettier . --write",
+    "types": "tsc --noemit",
+    "check": "npm run lint && npm run types"
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.115.0",
+    "@react-three/fiber": "^8.17.10",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.11.10",
+    "next": "14.2.16",
+    "react": "^18",
+    "react-dom": "^18",
+    "tailwind-merge": "^2.5.4",
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/three": "^0.169.0",
+    "@typescript-eslint/eslint-plugin": "^8.11.0",
+    "@typescript-eslint/parser": "^8.11.0",
+    "eslint": "^8.57.1",
+    "eslint-config-alloy": "^5.1.2",
+    "eslint-config-next": "14.2.16",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.1",
+    "postcss": "^8",
+    "prettier": "^3.3.3",
+    "prettier-plugin-organize-imports": "^4.1.0",
+    "prettier-plugin-tailwindcss": "^0.6.8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
