@@ -1,7 +1,7 @@
 import { months } from "@/constants/dates";
 import { pluralize } from "@/utils/pluralize";
 
-const getMonths = (value: string) => {
+const getMonths = (value: string): number => {
   let year: number;
   let month: number;
   if (value === "present") {
@@ -20,7 +20,7 @@ export const getExperienceDuration = (from: string, to: string): string => {
 
   const parts: string[] = [];
   if (years > 0) parts.push(pluralize(years, "year"));
-  if (months > 0) parts.push(pluralize(years, "month"));
+  if (months > 0) parts.push(pluralize(months, "month"));
 
   return parts.join(", ") || "";
 };
