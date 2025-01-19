@@ -3,9 +3,9 @@ import type { Resume } from "@/models/resume";
 
 const skills = {
   frontend: [
-    "HTML, CSS, JavaScript ES6+",
+    "JavaScript ES6+",
     "TypeScript 4+",
-    "CSS, SCSS, Tailwind",
+    "SCSS, Tailwind",
     "Responsive Design",
     "Bootstrap, Mantine, Chakra UI",
     "shadcn/ui, Framer Motion",
