@@ -8,7 +8,7 @@ export const projects: ProjectItem[] = [
     description:
       "An app for visualizing a collection of Platinum Trophies. Users can generate a personalized calendar showcasing their trophies and easily save or share it by simply entering their username. The app features multiple themes and allows filtering trophies by the year they were earned",
     image: "./projects/platinum-calendar.webp",
-    tags: ["Next.JS", "Data Visualization", "TailwindCSS", "Cheerio"],
+    tags: ["Next.JS", "Data Visualization", "Tailwind", "Cheerio"],
     links: [
       {
         icon: "github",
@@ -55,6 +55,25 @@ export const projects: ProjectItem[] = [
       {
         icon: "external",
         href: "https://hartaithan.github.io/a-z",
+      },
+    ],
+  },
+  {
+    id: "region-compatibility",
+    label: "Region Compatibility",
+    category: "Web App | Vue",
+    description:
+      "An app for checking the compatibility of product codes (Product Code/Content ID) across different PS Store regions. It helps determine whether the base game and DLC purchased in different PSN regions are compatible",
+    image: "./projects/region-compatibility.webp",
+    tags: ["Vue", "TypeScript", "shadcn/ui", "Tailwind"],
+    links: [
+      {
+        icon: "github",
+        href: "https://github.com/Hartaithan/region-compatibility",
+      },
+      {
+        icon: "external",
+        href: "https://region-compatibility.vercel.app",
       },
     ],
   },
